@@ -137,3 +137,17 @@ body {
     color: #111;
     margin: 22px 0;
 }
+
+#tab2-content {
+    position: relative;
+    height: 100%;
+}
+
+.lr-text {
+    position: absolute;
+    bottom: 0;      
+    right: 0;       
+    margin: 20px;   
+    font-size: 18px;
+    font-weight: bold;
+}
