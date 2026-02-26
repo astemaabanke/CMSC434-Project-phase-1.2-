@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile App Template</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
 </head>
 <body>
     <div class="mobile-container">
@@ -105,23 +108,9 @@
                     And can say nothing.
                 </p>
 
-                <p>
-                    Am I a coward?
-                    Who calls me villain?
-                    Breaks my pate across?
-                    Plucks off my beard and blows it in my face?
-                    Tweaks me by the nose?
-                    Gives me the lie i’ the throat
-                    As deep as to the lungs?
-                </p>
 
-                <p>
-                    Who does me this?
-                    Ha!
-                    ’Swounds, I should take it: for it cannot be
-                    But I am pigeon-liver’d and lack gall
-                    To make oppression bitter.
-                </p>
+
+
 
                 <p>
                     O, vengeance!
@@ -147,9 +136,16 @@
             <!-- TAB 3: COLORS -->
           
             <div class="tab-content" id="tab3-content">
-                <h2>Colors Tab</h2>
-                <p>Add your colors content here.</p>
-                <!-- Your code goes below this line -->
+                <h2>Colors</h2>
+                
+                <!-- Colorful text lines -->
+                <div class="color-text-line1">Hello There</div>
+                <div class="color-text-line2">Hi Again</div>
+                
+                <!-- Pie chart container -->
+                <div class="chart-container">
+                    <canvas id="pieChart" width="400" height="400"></canvas>
+                </div>
                 
             </div>
 

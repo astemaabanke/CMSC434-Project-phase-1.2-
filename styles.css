@@ -151,3 +151,57 @@ body {
     font-size: 18px;
     font-weight: bold;
 }
+
+/* ============================================ */
+/* TAB 3: COLORS STYLING                       */
+/* ============================================ */
+
+/* Tab 3 background */
+#tab3-content {
+    background: linear-gradient(135deg, #e8f4fd 0%, #f0e6ff 100%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+/* First colorful text line: yellow text on black background */
+.color-text-line1 {
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    padding: 12px;
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Second colorful text line: purple text on yellow background */
+.color-text-line2 {
+    background-color: yellow;
+    color: purple;
+    text-align: center;
+    padding: 12px;
+    margin: 15px 0 25px 0;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Chart container styling */
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#pieChart {
+    max-width: 350px;
+    max-height: 350px;
+}
