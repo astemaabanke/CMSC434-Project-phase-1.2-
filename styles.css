@@ -26,7 +26,7 @@ body {
 /* ============================================ */
 .mobile-container {
     width: 650px;
-    height: 1100px;
+    height: 750px;
     background: #ffffff;
     border: 2px solid #000;
     overflow: hidden;
@@ -65,7 +65,7 @@ body {
 
 .tab-content p {
     color: #333;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.6;
 }
 
@@ -114,4 +114,26 @@ body {
 /* Team members can add their own CSS here     */
 /* ============================================ */
 
+#tab1-content {
+    background: #f7b8c8;         /* light pink like example */
+    padding: 24px 18px;
+    height: 100%;
+    overflow-y: auto;            /* scroll inside Tab 1 */
+}
 
+/* Title for Tab 1 */
+#tab1-content h1 {
+    text-align: center;
+    font-size: 48px;             /* big like screenshot */
+    font-weight: 800;
+    color: #111;
+    margin-bottom: 18px;
+}
+
+/* Make the repeated text small like the example */
+#tab1-content p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #111;
+    margin: 22px 0;
+}
