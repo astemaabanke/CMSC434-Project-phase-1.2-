@@ -1,0 +1,117 @@
+/* ============================================ */
+/* BASIC RESET - Don't modify unless needed    */
+/* ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================================ */
+/* PAGE BACKGROUND                             */
+/* ============================================ */
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ============================================ */
+/* MOBILE DEVICE FRAME                         */
+/* Change width/height to adjust screen size   */
+/* ============================================ */
+.mobile-container {
+    width: 650px;
+    height: 1100px;
+    background: #ffffff;
+    border: 2px solid #000;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ============================================ */
+/* MAIN CONTENT AREA (where tabs display)      */
+/* This is where each team member's content    */
+/* will appear when their tab is selected      */
+/* ============================================ */
+.content-area {
+    flex: 1;
+    overflow-y: auto;
+    position: relative;
+    padding: 20px;
+}
+
+/* Each tab's content container */
+.tab-content {
+    display: none;  /* Hidden by default */
+    height: 100%;
+}
+
+/* Only the active tab is visible */
+.tab-content.active {
+    display: block;
+}
+
+/* Basic text styling - customize as needed */
+.tab-content h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.tab-content p {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ============================================ */
+/* BOTTOM TAB NAVIGATION BAR                   */
+/* Team members can style their tabs here      */
+/* ============================================ */
+.tab-bar {
+    display: flex;
+    background: #ddd;
+    border-top: 1px solid #000;
+}
+
+/* Individual tab buttons */
+.tab-button {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 5px;
+    border: none;
+    border-right: 1px solid #999;
+    background: #ddd;
+    cursor: pointer;
+    color: #000;
+}
+
+.tab-button:last-child {
+    border-right: none;
+}
+
+/* Active tab styling (currently selected) */
+.tab-button.active {
+    background: #fff;
+    font-weight: bold;
+}
+
+/* Tab label text */
+.tab-button .label {
+    font-size: 12px;
+}
+
+/* ============================================ */
+/* ADD YOUR CUSTOM STYLES BELOW THIS LINE      */
+/* Team members can add their own CSS here     */
+/* ============================================ */
+
+
