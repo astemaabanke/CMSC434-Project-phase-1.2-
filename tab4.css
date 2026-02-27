@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f7f5;
+  color: #1f2937;
+}
+
+
+.profile-page {
+  padding: 20px;
+  text-align: center;
+  padding-bottom: 110px;
+}
+
+.profile-title {
+  text-align: left;
+  margin: 0 0 28px 0;
+  color: #1f2937;
+}
+
+.profile-img {
+  width: 180px;
+  cursor: pointer;
+}
+
+.profile-name {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.banner {
+  margin: 18px auto 0;
+  max-width: 850px;
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 14px 16px;
+  background: #2f6f5e;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.banner button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  background: #1f2937;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 18px 0;
+  border-top: 4px solid #2f6f5e;
+}
+
+.bottom-item {
+  text-align: center;
+  width: 80px;
+  color: #cbd5e1;
+}
+
+.bottom-item .icon {
+  font-size: 26px;
+}
+
+.bottom-item .label {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.bottom-item.active {
+  background: #2f6f5e;
+  color: white;
+  padding: 10px 0;
+  border-radius: 10px;
+  width: 90px;
+}
