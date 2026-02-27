@@ -116,7 +116,6 @@ body {
 /* ============================================ */
 
 #tab1-content {
-  background: #f7b8c8; /* light pink like example */
   padding: 24px 18px;
   height: 100%;
   overflow-y: auto; /* scroll inside Tab 1 */
@@ -125,13 +124,12 @@ body {
 /* Title for Tab 1 */
 #tab1-content h1 {
   text-align: center;
-  font-size: 48px; /* big like screenshot */
+  font-size: 48px; 
   font-weight: 800;
   color: #111;
   margin-bottom: 18px;
 }
 
-/* Make the repeated text small like the example */
 #tab1-content p {
   font-size: 12px;
   line-height: 1.6;
