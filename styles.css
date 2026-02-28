@@ -1,15 +1,12 @@
-/* ============================================ */
-/* BASIC RESET - Don't modify unless needed    */
-/* ============================================ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ============================================ */
-/* PAGE BACKGROUND                             */
-/* ============================================ */
+
+/* PAGE BACKGROUND */
+
 body {
   font-family: Arial, sans-serif;
   background: #f0f0f0;
@@ -20,10 +17,8 @@ body {
   padding: 20px;
 }
 
-/* ============================================ */
-/* MOBILE DEVICE FRAME                         */
-/* Change width/height to adjust screen size   */
-/* ============================================ */
+
+/* MOBILE DEVICE FRAME */
 .mobile-container {
   width: 650px;
   height: 750px;
@@ -34,11 +29,8 @@ body {
   flex-direction: column;
 }
 
-/* ============================================ */
-/* MAIN CONTENT AREA (where tabs display)      */
-/* This is where each team member's content    */
-/* will appear when their tab is selected      */
-/* ============================================ */
+
+/* MAIN CONTENT AREA (where tabs display) */
 .content-area {
   flex: 1;
   overflow-y: auto;
@@ -46,18 +38,15 @@ body {
   padding: 20px;
 }
 
-/* Each tab's content container */
 .tab-content {
-  display: none; /* Hidden by default */
+  display: none;
   height: 100%;
 }
 
-/* Only the active tab is visible */
 .tab-content.active {
   display: block;
 }
 
-/* Basic text styling - customize as needed */
 .tab-content h2 {
   margin-bottom: 10px;
   color: #333;
@@ -69,62 +58,53 @@ body {
   line-height: 1.6;
 }
 
-/* ============================================ */
-/* BOTTOM TAB NAVIGATION BAR                   */
-/* Team members can style their tabs here      */
-/* ============================================ */
+
+/* BOTTOM TAB NAVIGATION BAR */
 .tab-bar {
   display: flex;
-  background: #ddd;
-  border-top: 1px solid #000;
+  background: #1f2937;
+  border-top: 4px solid #2f6f5e;
 }
 
-/* Individual tab buttons */
 .tab-button {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 15px 5px;
+  padding: 18px 6px;
   border: none;
-  background: #ddd;
+  background: #1f2937;
   cursor: pointer;
-  color: #000;
+  color: #cbd5e1;
 }
 
-/* Tab label text */
 .tab-button .label {
-  font-size: 12px;
+  font-size: 13px;
 }
 
-/* Icon styling for tab buttons */
 .tab-button .icon {
-  font-size: 30px;
-  margin-bottom: 4px;
+  font-size: 26px;
+  margin-bottom: 5px;
 }
 
-/* Active tab styling (currently selected) */
 .tab-button.active {
-  background: #fff;
+  background: #2f6f5e;
+  color: white;
   font-weight: bold;
+  border-radius: 10px;
+  margin: 8px 6px;
 }
-
-/* ============================================ */
-/* ADD YOUR CUSTOM STYLES BELOW THIS LINE      */
-/* Team members can add their own CSS here     */
-/* ============================================ */
 
 #tab1-content {
   padding: 24px 18px;
   height: 100%;
-  overflow-y: auto; /* scroll inside Tab 1 */
+  overflow-y: auto;
 }
 
-/* Title for Tab 1 */
 #tab1-content h1 {
   text-align: center;
-  font-size: 48px; 
+  font-size: 48px;
   font-weight: 800;
   color: #111;
   margin-bottom: 18px;
@@ -151,18 +131,13 @@ body {
   font-weight: bold;
 }
 
-/* ============================================ */
-/* TAB 3: COLORS STYLING                       */
-/* ============================================ */
-
-/* Tab 3 background */
+/* TAB 3: COLORS STYLING */
 #tab3-content {
   background: #f9fafb;
   border-radius: 10px;
   padding: 25px;
 }
 
-/* First colorful text line: yellow text on black background */
 .color-text-line1 {
   background-color: black;
   color: yellow;
@@ -175,7 +150,6 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Second colorful text line: purple text on yellow background */
 .color-text-line2 {
   background-color: yellow;
   color: purple;
@@ -188,7 +162,6 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Chart container styling */
 .chart-container {
   display: flex;
   justify-content: center;
@@ -249,6 +222,7 @@ body {
   min-height: 40px;
   font-weight: bold;
 }
+
 /* TAB 6 STYLE */
 #tab6-content {
   background: #f9fafb;
@@ -297,18 +271,73 @@ body {
   cursor: pointer;
 }
 
-/* Crossed off style */
 #todo-list li.completed {
   text-decoration: line-through;
   background: #d0d0d0;
   color: #555;
 }
 
-/* Delete button */
 .delete-btn {
   background: transparent;
   border: none;
   font-size: 16px;
   cursor: pointer;
   color: #900;
+}
+
+/* TAB 4 STYLING */
+#tab4-content {
+  background: #f6f7f5;
+  height: 100%;
+  padding: 0;
+}
+
+#tab4-content .profile-page {
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+}
+
+#tab4-content .profile-title {
+  text-align: left;
+  margin: 0 0 28px 0;
+  color: #1f2937;
+  font-size: 24px;
+}
+
+#tab4-content .profile-img {
+  width: 180px;
+  cursor: pointer;
+}
+
+#tab4-content .profile-name {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+#tab4-content .banner {
+  margin: 18px auto 0;
+  max-width: 850px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 16px;
+  background: #000000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+#tab4-content .hidden {
+  display: none;
+}
+
+#tab4-content .banner button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 1;
 }

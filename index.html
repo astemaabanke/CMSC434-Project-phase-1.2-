@@ -11,13 +11,9 @@
   </head>
   <body>
     <div class="mobile-container">
-      <!-- ============================================ -->
-      <!-- MAIN CONTENT AREA FOR ALL TABS               -->
-      <!-- Each div below is for one tab's content      -->
-      <!-- ============================================ -->
+      <!-- MAIN CONTENT AREA FOR ALL TABS-->
       <div class="content-area">
         <!-- TAB 1: TEXT -->
-        <!-- Team Member: Add your content for Text tab here -->
         <div class="tab-content active" id="tab1-content">
           <h2>Text Screen</h2>
 
@@ -87,7 +83,6 @@
         <div class="tab-content" id="tab2-content">
           <h2>Text in Lower Right</h2>
           <div class="lr-text">Down Here</div>
-          <!-- Your code goes below this line -->
         </div>
 
         <!-- TAB 3: COLORS -->
@@ -106,30 +101,25 @@
         </div>
 
         <!-- TAB 4: PROFILE -->
-
         <div class="tab-content" id="tab4-content">
-            <div class="profile-page">
+          <div class="profile-page">
+            <h1 class="profile-title">User Profile</h1>
 
-              <h1 class="profile-title">User Profile</h1>
+            <img
+              id="profileImg"
+              class="profile-img"
+              src="https://www.cs.umd.edu/class/spring2026/cmsc434/P1_2/SmileyFace.png"
+              alt="Profile Image"
+            />
 
-              <img
-                id="profileImg"
-                class="profile-img"
-                src="https://www.cs.umd.edu/class/spring2026/cmsc434/P1_2/SmileyFace.png"
-                alt="Profile Image"
-              />
-
-            <div class="profile-name">
-              <strong>Smiley J. Smile</strong>
-            </div>
-
+            <div class="profile-name"><strong>Smiley J. Smile</strong></div>
 
             <div id="banner" class="banner hidden">
               <div>you clicked me! why!?</div>
-              <button id="closeBanner">×</button>
+              <button id="closeBanner" aria-label="Close">x</button>
             </div>
-
-      </div>
+          </div>
+        </div>
 
         <!-- TAB 5: CHOICES -->
         <div class="tab-content" id="tab5-content">
@@ -180,37 +170,38 @@
         </div>
       </div>
 
-      <!-- ============================================ -->
-      <!-- BOTTOM TAB NAVIGATION BAR                    -->
-      <!-- You can add icons later by replacing text    -->
-      <!-- ============================================ -->
+      <!-- BOTTOM TAB NAVIGATION BAR -->
       <div class="tab-bar">
         <button class="tab-button active" data-tab="tab1">
+          <div class="icon">📝</div>
           <span class="label">Text</span>
         </button>
 
         <button class="tab-button" data-tab="tab2">
+          <div class="icon">↘️</div>
           <span class="label">LR</span>
         </button>
 
         <button class="tab-button" data-tab="tab3">
-             <div class="icon">🎨</div>
+          <div class="icon">🎨</div>
           <span class="label">Colors</span>
         </button>
 
         <button class="tab-button" data-tab="tab4">
+          <div class="icon">👤</div>
           <span class="label">Profile</span>
         </button>
 
         <button class="tab-button" data-tab="tab5">
+          <div class="icon">✅</div>
           <span class="label">Choices</span>
         </button>
 
         <button class="tab-button" data-tab="tab6">
+          <div class="icon">📋</div>
           <span class="label">ToDo</span>
         </button>
       </div>
-    </div>
 
     <!-- JavaScript for tab switching functionality -->
     <script src="script.js"></script>

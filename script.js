@@ -1,30 +1,34 @@
-/* ============================================
-   TAB SWITCHING FUNCTIONALITY
-   This code handles switching between tabs
-   when a user clicks on a tab button.
-
-   ============================================ */
-
 document.addEventListener("DOMContentLoaded", function () {
-  // Get all tab buttons and content areas
   const tabButtons = document.querySelectorAll(".tab-button");
   const tabContents = document.querySelectorAll(".tab-content");
 
-  // Add click event to each tab button
   tabButtons.forEach((button) => {
     button.addEventListener("click", function () {
-      // Get the ID of the tab to show
       const tabId = this.getAttribute("data-tab");
 
-      // Remove 'active' class from all buttons and content areas
       tabButtons.forEach((btn) => btn.classList.remove("active"));
       tabContents.forEach((content) => content.classList.remove("active"));
 
-      // Add 'active' class to clicked button and its content
       this.classList.add("active");
       document.getElementById(tabId + "-content").classList.add("active");
     });
   });
+
+  createPieChart();
+
+  const profileImg = document.getElementById("profileImg");
+  const banner = document.getElementById("banner");
+  const closeBanner = document.getElementById("closeBanner");
+
+  if (profileImg && banner && closeBanner) {
+    profileImg.addEventListener("click", () => {
+      banner.classList.remove("hidden");
+    });
+
+    closeBanner.addEventListener("click", () => {
+      banner.classList.add("hidden");
+    });
+  }
 });
 
 /* ============================================
@@ -33,15 +37,12 @@ document.addEventListener("DOMContentLoaded", function () {
    
    ============================================ */
 
-// Initialize pie chart when page loads
-document.addEventListener("DOMContentLoaded", function () {
-  createPieChart();
-});
-
 function createPieChart() {
-  const ctx = document.getElementById("pieChart").getContext("2d");
+  const ctxEl = document.getElementById("pieChart");
+  if (!ctxEl) return;
 
-  // Improve canvas quality for crisp rendering
+  const ctx = ctxEl.getContext("2d");
+
   const canvas = ctx.canvas;
   const rect = canvas.getBoundingClientRect();
   const dpr = window.devicePixelRatio || 1;
@@ -52,7 +53,6 @@ function createPieChart() {
   canvas.style.width = rect.width + "px";
   canvas.style.height = rect.height + "px";
 
-  // Register the plugin
   Chart.register(ChartDataLabels);
 
   const pieChart = new Chart(ctx, {
@@ -62,11 +62,7 @@ function createPieChart() {
       datasets: [
         {
           data: [300, 500, 100],
-          backgroundColor: [
-            "#FF4081", // Vibrant pink for Roses
-            "#9C27B0", // Rich purple for Violets
-            "#FFC107", // Bright yellow for Tulips
-          ],
+          backgroundColor: ["#FF4081", "#9C27B0", "#FFC107"],
           borderWidth: 3,
           borderColor: "#ffffff",
           hoverBorderWidth: 4,
@@ -118,7 +114,12 @@ function displayChoices() {
   const camera1 = document.querySelector('input[name="camera1"]:checked').value;
   const camera2 = document.getElementById("camera2").value;
 
-  const message = "You selected " + camera1 + " for Camera Type #1 and " + camera2 + " for Camera Type #2.";
+  const message =
+    "You selected " +
+    camera1 +
+    " for Camera Type #1 and " +
+    camera2 +
+    " for Camera Type #2.";
 
   document.getElementById("choice-output").innerText = message;
 }
@@ -136,7 +137,6 @@ function addTodo() {
     li.classList.toggle("completed");
   });
 
-  // Delete button
   const deleteBtn = document.createElement("button");
   deleteBtn.textContent = "×";
   deleteBtn.className = "delete-btn";
